@@ -1,0 +1,55 @@
+# Loading project testFifo
+# Compile of TestFifo.vhd was successful.
+# Compile of TestFifo2.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of TestFifo.vhd was successful.
+# Compile of TestFifo2.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.fifo_test_v2
+# vsim work.fifo_test_v2 
+# Start time: 14:19:22 on Nov 10,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading altera_mf.altera_mf_components
+# Loading work.fifo_test_v2(rtl)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.scfifo(behavior)
+add wave -position insertpoint sim:/fifo_test_v2/fifo/*
+add wave -position insertpoint  \
+sim:/fifo_test_v2/wrreq \
+sim:/fifo_test_v2/wr_data_width \
+sim:/fifo_test_v2/usedw_width \
+sim:/fifo_test_v2/usedw \
+sim:/fifo_test_v2/USE_ADV_FEATURES \
+sim:/fifo_test_v2/tests_empty_full \
+sim:/fifo_test_v2/tests \
+sim:/fifo_test_v2/test_usedw_width \
+sim:/fifo_test_v2/sclr \
+sim:/fifo_test_v2/READ_MODE \
+sim:/fifo_test_v2/rdreq \
+sim:/fifo_test_v2/rd_data_width \
+sim:/fifo_test_v2/q \
+sim:/fifo_test_v2/PROG_FULL_THRESH \
+sim:/fifo_test_v2/PROG_EMPTY_THRESH \
+sim:/fifo_test_v2/lpm_showahead \
+sim:/fifo_test_v2/full \
+sim:/fifo_test_v2/FIFO_WRITE_DEPTH \
+sim:/fifo_test_v2/FIFO_READ_LATENCY \
+sim:/fifo_test_v2/empty \
+sim:/fifo_test_v2/data \
+sim:/fifo_test_v2/clock \
+sim:/fifo_test_v2/almost_full_value \
+sim:/fifo_test_v2/almost_full \
+sim:/fifo_test_v2/almost_empty_value \
+sim:/fifo_test_v2/almost_empty \
+sim:/fifo_test_v2/add_ram_output_register \
+sim:/fifo_test_v2/aclr
+run -all
+# ** Warning: Warning : Overflow occurred! Fifo output is unknown until the next reset is asserted
+#    Time: 470 ns  Iteration: 1  Instance: /fifo_test_v2/fifo
+# Can't move the Now cursor.
+# ** Fatal: Unable to read lock file necessary for use of uncounted nodelocked license. Exiting.
